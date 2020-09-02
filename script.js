@@ -16,7 +16,7 @@ function uploadFileToS3(){
     redirect: 'follow'
   };
   
-  fetch(`https://s4mqxcm6dj.execute-api.ap-south-1.amazonaws.com/v1/upload-file-to-s3?name=${fileName}`, requestOptions)
+  fetch(`https://da6kgbk00f.execute-api.ap-south-1.amazonaws.com/v1/testapi?name=${fileName}`, requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
